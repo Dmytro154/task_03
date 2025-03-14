@@ -1,20 +1,43 @@
-body {
-    background-color: #fafafa;
+/* Скидання відступів і маргінів */
+* {
     padding: 0;
     margin: 0;
 }
 
-.block {
-    display: flex;
-    align-items: center; /* Позиціонування по вертикалі */
-    justify-content: space-around; /* Позиціонування по горизонталі */
+div {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
 }
 
-.block > div {
-    background-color: rgba(223, 108, 108, 1);
-    width: 120px;
-    margin: 10px; /* Відступи між блоками */
-    padding: 10px;
-    text-align: center; /* Центрування тексту всередині блоку */
-    font-size: 25px;
+/* Анімація */
+@keyframes example {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+    23% {
+        background-color: blue;
+        left: 0px;
+        top: 200px;
+    }
+    55% {
+        background-color: green;
+        left: 200px;
+        top: 200px;
+    }
+    70% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
 }
