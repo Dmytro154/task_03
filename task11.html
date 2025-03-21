@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Завдання 11 - Bootstrap Кнопки та Форми</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="mb-4">Завдання на вивчення класів Bootstrap для кнопок</h1>
+        
+        <h2>Приклад</h2>
+        <div class="container">
+            <button type="button" class="btn btn-outline-primary">Прозора</button>
+            <button type="button" class="btn btn-success">Гарна</button>
+            <button type="button" class="btn btn-warning btn-lg">Велика</button>
+        </div>
+        
+        <h2>Завдання 1: Створення базових кнопок</h2>
+        <div class="container">
+            <button type="button" class="btn btn-danger">Видалити</button>
+            <button type="button" class="btn btn-primary">Зберегти</button>
+            <button type="button" class="btn btn-success">Підтвердити</button>
+        </div>
+        
+        <h2>Завдання 2: Кнопки з контуром</h2>
+        <div class="container">
+            <button type="button" class="btn btn-outline-info">Інформація</button>
+            <button type="button" class="btn btn-outline-danger">Скасувати</button>
+            <button type="button" class="btn btn-outline-success">Додати</button>
+        </div>
+        
+        <h2>Завдання 3: Розміри кнопок</h2>
+        <div class="container">
+            <button type="button" class="btn btn-primary btn-lg">Створити проект</button>
+            <button type="button" class="btn btn-success">Зберегти</button>
+            <button type="button" class="btn btn-warning btn-sm">Попередження</button>
+        </div>
+        
+        <h2>Завдання 4: Комбіновані стилі кнопок</h2>
+        <div class="container">
+            <button type="button" class="btn btn-outline-dark btn-sm">Назад</button>
+            <button type="button" class="btn btn-danger btn-lg">Видалити все</button>
+            <button type="button" class="btn btn-info">Докладніше</button>
+        </div>
+        
+        <h1 class="mt-5">Завдання на вивчення класів Bootstrap для форм</h1>
+        
+        <h2>Приклад форми реєстрації</h2>
+        <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Електронна пошта</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ваш email">
+                    <small class="form-text text-muted">Ми не будемо надсилати спам :)</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Пароль</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Введіть пароль">
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Погоджуюсь з обробкою даних</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Відправити</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
